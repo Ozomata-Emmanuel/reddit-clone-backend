@@ -16,7 +16,6 @@ connect_db();
 app.use(cors({
   origin: ['https://reddit-clone-sigma-woad.vercel.app', 'http://localhost:5173','http://localhost:5174', 'http://localhost:3000'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
 }));
 app.use(express.json())
 
