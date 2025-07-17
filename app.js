@@ -13,10 +13,7 @@ require('dotenv').config();
 connect_db();
 
 //Req.Body
-app.use(cors({
-  origin: ['https://reddit-clone-sigma-woad.vercel.app', 'http://localhost:5173','http://localhost:5174', 'http://localhost:3000'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-}));
+app.use(cors());
 app.use(express.json())
 
 // ALL API Endpoints
